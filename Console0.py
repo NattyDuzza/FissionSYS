@@ -28,9 +28,12 @@ def startup():
     notComplete = True
     
     #Menu:
-    choice = input("Please Choose an Option: \n1. Simple Fission \n2. Placeholder \n3. Placeholder \n")
-    
+        
     while notComplete:
+        
+        choice = input("Please Choose an Option: \n1. Simple Fission \n2. Placeholder \n3. Placeholder \n")
+    
+    
         if choice == '1':
             notComplete = False
             simple.start()
@@ -41,16 +44,18 @@ def startup():
         else:
             print("Error. Please Try Again")
             
+            time.sleep(1)
+            
             #reminder: possibly make the following into a function since it is being reused:
             
             try: 
-              os.system('CLS') #windows
+                os.system('CLS') #windows
             except:
-              pass
+                pass
             
             try:
-              os.system('clear') #linux
+                os.system('clear') #linux
             except:
-              print("Error")
+                print("Error")
 
 
