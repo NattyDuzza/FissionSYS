@@ -5,4 +5,6 @@ infoStartup() - Pastes configuration message at beginning of a console startup
 startup() - Handles main startup after config message
 
 
+SimpleFission:
 
+start() - sets off the simple fission processes
