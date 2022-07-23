@@ -1,5 +1,6 @@
 import time
 import os
+import SimpleFission as simple
 
 def infoStartup():
 
@@ -23,7 +24,33 @@ def infoStartup():
     print("Error")
 
 def startup():
-  input('')
-
+    
+    notComplete = True
+    
+    #Menu:
+    choice = input("Please Choose an Option: \n1. Simple Fission \n2. Placeholder \n3. Placeholder \n")
+    
+    while notComplete:
+        if choice == '1':
+            notComplete = False
+            simple.start()
+        elif choice == '2':
+            pass
+        elif choice == '3':
+            pass
+        else:
+            print("Error. Please Try Again")
+            
+            #reminder: possibly make the following into a function since it is being reused:
+            
+            try: 
+              os.system('CLS') #windows
+            except:
+              pass
+            
+            try:
+              os.system('clear') #linux
+            except:
+              print("Error")
 
 
